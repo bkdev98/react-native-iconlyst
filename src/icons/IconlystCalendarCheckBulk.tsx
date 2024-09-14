@@ -1,0 +1,38 @@
+import * as React from 'react';
+import Svg, { Path } from 'react-native-svg';
+import type { SvgProps } from 'react-native-svg';
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const IconlystCalendarCheckBulk = ({
+  title,
+  titleId,
+  ...props
+}: SvgProps & SVGRProps) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={props.size}
+    height={props.size}
+    fill="none"
+    viewBox="0 0 25 24"
+    aria-labelledby={titleId}
+    {...props}
+  >
+    {title ? <title id={titleId}>{title}</title> : null}
+    <Path
+      fill={props.color}
+      fillRule="evenodd"
+      d="M3.984 16.863c0 2.98 1.79 4.76 4.79 4.76h7.62c3 0 4.79-1.75 4.79-4.69v-5.71a.2.2 0 0 0-.2-.2h-16.8a.2.2 0 0 0-.2.2z"
+      clipRule="evenodd"
+      opacity={0.4}
+    />
+    <Path
+      fill={props.color}
+      fillRule="evenodd"
+      d="M19.954 5.325c-.73-.72-1.76-1.13-2.98-1.24v-.96a.749.749 0 1 0-1.5 0v3.55c-.07.02-.13.04-.2.04-.42 0-.75-.34-.75-.75v-1.72a.2.2 0 0 0-.2-.2h-4.63v-.92a.749.749 0 1 0-1.5 0v3.55c-.06.02-.13.04-.2.04-.41 0-.75-.34-.75-.75V4.501a.193.193 0 0 0-.247-.189c-1.908.573-3.013 2.12-3.013 4.413v.6c0 .11.09.2.2.2h16.8a.2.2 0 0 0 .2-.2v-.6c0-1.41-.42-2.59-1.23-3.4M9.369 15.739a.75.75 0 0 1 1.06.002l1.224 1.227 3.087-3.088a.751.751 0 0 1 1.06 1.06l-3.617 3.618a.747.747 0 0 1-1.061 0l-1.755-1.759a.75.75 0 0 1 .002-1.06"
+      clipRule="evenodd"
+    />
+  </Svg>
+);
+export default IconlystCalendarCheckBulk;

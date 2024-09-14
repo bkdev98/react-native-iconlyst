@@ -1,0 +1,44 @@
+{
+  "name": "react-native-iconlyst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/lib/index.tsx",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "crawl": "node scripts/crawl-icons.js",
+    "generate": "node scripts/generator.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-prettier": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@types/react": "^18.3.5",
+    "@types/react-native": "^0.73.0",
+    "case": "^1.6.3",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-native": "^0.75.3",
+    "react-native-svg": "^15.6.0",
+    "undici": "^6.19.8"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "*"
+  },
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "useTabs": false
+  },
+  "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
+}

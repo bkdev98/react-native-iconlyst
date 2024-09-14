@@ -1,0 +1,32 @@
+import * as React from 'react';
+import Svg, { Path } from 'react-native-svg';
+import type { SvgProps } from 'react-native-svg';
+interface SVGRProps {
+  title?: string;
+  titleId?: string;
+}
+const Iconlyst24DaysWarrantyBroken = ({
+  title,
+  titleId,
+  ...props
+}: SvgProps & SVGRProps) => (
+  <Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={props.size}
+    height={props.size}
+    fill="none"
+    viewBox="0 0 24 24"
+    aria-labelledby={titleId}
+    {...props}
+  >
+    {title ? <title id={titleId}>{title}</title> : null}
+    <Path
+      stroke={props.color}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.5}
+      d="M15.498 14.405v-1.21m0 0h1.025m-1.025 0h-2.95l2.95-4.101zM8.025 10.527a1.414 1.414 0 0 1 2.828 0c0 1.767-2.827 1.767-2.827 3.86h2.827M4.99 7.188a2.2 2.2 0 0 1 2.2-2.2h1c.58 0 1.137-.23 1.55-.638l.698-.7a2.2 2.2 0 0 1 3.112-.01h0l.01.008.7.7c.41.41.968.64 1.549.64h1.002a2.2 2.2 0 0 1 2.2 2.2M7.19 19.01a2.2 2.2 0 0 1-2.199-2.2v-1.005c0-.58-.23-1.137-.64-1.548l-.699-.7a2.2 2.2 0 0 1-.015-3.109l.712-.713c.41-.412.64-.97.64-1.55v-.997M19.65 9.738l.7.7a2.2 2.2 0 0 1 .011 3.112l-.71.71c-.409.411-.639.967-.639 1.548v1.004a2.2 2.2 0 0 1-2.2 2.196h-1.005c-.58 0-1.138.23-1.55.64l-.7.699a2.2 2.2 0 0 1-3.11.013l-.71-.71"
+    />
+  </Svg>
+);
+export default Iconlyst24DaysWarrantyBroken;
