@@ -1,11 +1,15 @@
 {
   "name": "react-native-iconlyst",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "src/lib/index.tsx",
   "files": [
     "src"
   ],
+  "exports": {
+    ".": "./src/lib/index.tsx",
+    "./*": "./src/iconlyst/*.tsx"
+  },
   "scripts": {
     "crawl": "node scripts/crawl-icons.js",
     "generate": "node scripts/generator.js",
